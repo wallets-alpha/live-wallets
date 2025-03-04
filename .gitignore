@@ -1,5 +1,16 @@
+# Ignore everything
+*
+# Don't ignore directories, so we can recurse into them
+!*/
+# Don't ignore .gitignore
+!.gitignore
+# Don't ignore CSV files in wallet_exports
+!wallet_exports/*.csv
+# Still ignore these specific patterns
 *.db
-venv/
-__pycache__/
-*.pyc
 *.log
+*.pyc
+__pycache__/
+venv/
+server.pid
+
